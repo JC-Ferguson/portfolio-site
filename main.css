@@ -8,18 +8,75 @@
 #home div footer {
   text-align: right;
 }
-#home .container {
+#home main .container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
-#home .logos {
-  align-self: flex-start;
+#home main .logos {
+  display: flex;
+  flex-direction: column;
+}
+#home main figure {
+  width: 85%;
+}
+#home main .greet_text p {
+  text-align: center;
 }
 
+@media only screen and (min-width: 1024px) {
+  #home nav {
+    text-align: end;
+  }
+  #home main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #home main .greet_text {
+    align-self: center;
+  }
+}
+#about main .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#about main .logos {
+  display: flex;
+  flex-direction: column;
+}
+#about main .icons {
+  display: inline-block;
+}
+#about main figure {
+  width: 85%;
+}
+#about main div header {
+  text-align: center;
+}
+#about main div p {
+  text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  #about nav {
+    text-align: end;
+  }
+  #about main {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
 div nav {
   text-align: center;
+}
+
+.icons {
+  width: 25px;
+  height: 25px;
 }
 
 /*# sourceMappingURL=main.css.map */

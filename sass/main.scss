@@ -1,8 +1,17 @@
 @import "home";
+@import "about";
 
 div {
 
     nav {
         text-align: center; 
     }
+}
+
+.icons {
+
+    // transform: rotate(90deg);
+    width: 25px;
+    height: 25px;
+
 }
