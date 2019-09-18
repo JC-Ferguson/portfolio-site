@@ -34,8 +34,17 @@
     flex-direction: row;
     justify-content: space-between;
   }
-  #home main .greet_text {
+  #home main .logos {
     align-self: center;
+    width: 10vw;
+  }
+  #home main .container {
+    width: 40vw;
+  }
+  #home main .greet_text {
+    width: 73vw;
+    align-self: center;
+    max-width: 45vw;
   }
 }
 #about main .container {
@@ -68,6 +77,56 @@
   #about main {
     display: flex;
     justify-content: space-evenly;
+  }
+}
+#blog header {
+  text-align: center;
+}
+#blog main figure {
+  text-align: center;
+}
+#blog main figure .blog_image {
+  width: 60vw;
+  max-width: 600px;
+}
+#blog main article {
+  text-align: center;
+  max-width: 50vw;
+  margin: auto;
+}
+#blog footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#resume .container_1 div {
+  display: flex;
+}
+#resume .container_1 section ol {
+  text-align-last: right;
+}
+#resume .logos {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media only screen and (min-width: 1024px) {
+  #resume header {
+    text-align: center;
+  }
+  #resume main {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+  #resume main div .container_2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #resume main .logos {
+    display: flex;
+    flex-direction: column;
   }
 }
 div nav {

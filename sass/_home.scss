@@ -64,9 +64,19 @@
             flex-direction: row;
             justify-content: space-between;
 
-            .greet_text {
-
+            .logos{
                 align-self: center;
+                width: 10vw;
+            }
+
+            .container {
+                width:40vw;
+            }
+
+            .greet_text {
+                width: 73vw;
+                align-self: center;
+                max-width: 45vw;
 
             }
 

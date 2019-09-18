@@ -1,5 +1,7 @@
 @import "home";
 @import "about";
+@import "blog";
+@import "resume";
 
 div {
 
@@ -9,8 +11,6 @@ div {
 }
 
 .icons {
-
-    // transform: rotate(90deg);
     width: 25px;
     height: 25px;
 
