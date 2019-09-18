@@ -1,0 +1,25 @@
+#home div h1 {
+  color: #c20404;
+  text-decoration: underline;
+}
+#home div h2 {
+  text-align: center;
+}
+#home div footer {
+  text-align: right;
+}
+#home .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#home .logos {
+  align-self: flex-start;
+}
+
+div nav {
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */
