@@ -55,9 +55,9 @@
 @media only screen and (min-width: 1024px) {
 
     #home { 
-        height: 95vh;
-        width: 90vw;
-        margin: 4px;
+        h1 {
+            font-size: 3vw; 
+        }
 
         nav {
             text-align: end;
@@ -66,28 +66,30 @@
         main {
             margin: inherit;
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
             width: 90vw;
 
             .container {
-                height: 85vh;
+                height: 65vh;
+                width: 80vw;
+
+                .logo_holder {
+                    width: 3vw;
+                }
 
                 .logos{
                     align-self: center;
-                    width: 10vw;
+                    width: inherit;
                 }
 
                 .image_holder {
-                    height: 85vh;
-                    width: auto;
+                    height: 65vh;
+                    // width: 40vw;
                 
                     figure {
-                        margin: auto;
-                        max-width: 70vw;
+                        width: 35vw;
                     
                         img {
-                            height: 70vh;
+                            height: 60vh;
                         }
                     }
                 }
@@ -95,20 +97,16 @@
 
             }
 
-            // .logos{
-            //     align-self: center;
-            //     width: 10vw;
-            // }
-
             .greet_text {
                 align-self: center;
                 max-width: 40vw;
+
                 h2 {
                     font-size: 3vw;
                 }
 
                 p {
-                    font-size: 1.5vw;
+                    font-size: 1.25vw;
                 }
 
             }
