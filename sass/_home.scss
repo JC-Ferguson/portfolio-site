@@ -17,6 +17,8 @@
     }
 
     main{
+        max-width: 80vw;
+        margin: auto;
 
         .container {
             display: flex;
@@ -53,30 +55,61 @@
 @media only screen and (min-width: 1024px) {
 
     #home { 
+        height: 95vh;
+        width: 90vw;
+        margin: 4px;
 
         nav {
             text-align: end;
         }
 
         main {
-
+            margin: inherit;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-
-            .logos{
-                align-self: center;
-                width: 10vw;
-            }
+            width: 90vw;
 
             .container {
-                width:40vw;
+                height: 85vh;
+
+                .logos{
+                    align-self: center;
+                    width: 10vw;
+                }
+
+                .image_holder {
+                    height: 85vh;
+                    width: auto;
+                
+                    figure {
+                        margin: auto;
+                        max-width: 70vw;
+                    
+                        img {
+                            height: 70vh;
+                        }
+                    }
+                }
+                
+
             }
 
+            // .logos{
+            //     align-self: center;
+            //     width: 10vw;
+            // }
+
             .greet_text {
-                width: 73vw;
                 align-self: center;
-                max-width: 45vw;
+                max-width: 40vw;
+                h2 {
+                    font-size: 3vw;
+                }
+
+                p {
+                    font-size: 1.5vw;
+                }
 
             }
 

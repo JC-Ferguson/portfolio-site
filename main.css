@@ -8,6 +8,10 @@
 #home div footer {
   text-align: right;
 }
+#home main {
+  max-width: 80vw;
+  margin: auto;
+}
 #home main .container {
   display: flex;
   flex-direction: row;
@@ -26,25 +30,48 @@
 }
 
 @media only screen and (min-width: 1024px) {
+  #home {
+    height: 95vh;
+    width: 90vw;
+    margin: 4px;
+  }
   #home nav {
     text-align: end;
   }
   #home main {
+    margin: inherit;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 90vw;
   }
-  #home main .logos {
+  #home main .container {
+    height: 85vh;
+  }
+  #home main .container .logos {
     align-self: center;
     width: 10vw;
   }
-  #home main .container {
-    width: 40vw;
+  #home main .container .image_holder {
+    height: 85vh;
+    width: auto;
+  }
+  #home main .container .image_holder figure {
+    margin: auto;
+    max-width: 70vw;
+  }
+  #home main .container .image_holder figure img {
+    height: 70vh;
   }
   #home main .greet_text {
-    width: 73vw;
     align-self: center;
-    max-width: 45vw;
+    max-width: 40vw;
+  }
+  #home main .greet_text h2 {
+    font-size: 3vw;
+  }
+  #home main .greet_text p {
+    font-size: 1.5vw;
   }
 }
 #about main .container {
@@ -71,33 +98,75 @@
 }
 
 @media only screen and (min-width: 1024px) {
+  #about {
+    height: 95vh;
+    width: 90vw;
+    margin: 4px;
+  }
   #about nav {
     text-align: end;
   }
   #about main {
+    margin: inherit;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90vw;
+  }
+  #about main .container {
+    height: 85vh;
+  }
+  #about main .container .logos {
+    align-self: center;
+    width: 10vw;
+  }
+  #about main .container .image_holder {
+    height: 85vh;
+    width: auto;
+  }
+  #about main .container .image_holder figure {
+    margin: auto;
+    max-width: 70vw;
+  }
+  #about main .container .image_holder figure img {
+    height: 70vh;
+  }
+  #about main .about_me {
+    align-self: center;
+    max-width: 40vw;
+  }
+  #about main .about_me h1 {
+    font-size: 3vw;
+  }
+  #about main .about_me p {
+    font-size: 1.5vw;
   }
 }
 #blog header {
   text-align: center;
+  font-size: 4vw;
 }
 #blog main figure {
   text-align: center;
+  font-size: 3vw;
 }
 #blog main figure .blog_image {
   width: 60vw;
-  max-width: 600px;
+  max-width: 900px;
 }
 #blog main article {
   text-align: center;
+  font-size: 2vw;
   max-width: 50vw;
   margin: auto;
+}
+#blog .icons {
+  display: inline-block;
 }
 #blog footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 #resume .container_1 div {
@@ -119,6 +188,33 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
+  }
+  #resume main .wes {
+    width: 60vw;
+  }
+  #resume main .wes .container_1 {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #resume main .wes .container_1 h3 {
+    font-size: 1.55vw;
+    margin: inherit;
+  }
+  #resume main .wes .container_1 div {
+    justify-content: space-between;
+  }
+  #resume main .wes .container_1 div div {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+  }
+  #resume main .wes .container_1 div div div {
+    flex-direction: column;
+  }
+  #resume main .wes .container_1 section {
+    width: 48vw;
   }
   #resume main div .container_2 {
     display: flex;
