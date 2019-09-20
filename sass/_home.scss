@@ -1,6 +1,12 @@
 #home {
+    margin: 15px 0;
 
     div {
+        nav {
+            display: flex;
+            justify-content: space-evenly;
+                
+        }
 
         h1 {
             color: rgb(194, 4, 4);
@@ -60,7 +66,9 @@
         }
 
         nav {
-            text-align: end;
+            padding-left: 75vw;
+            display: flex;
+            justify-content: space-between;
         }
 
         main {
