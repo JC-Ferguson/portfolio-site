@@ -7,6 +7,7 @@ div {
     nav {
         display: flex;
         justify-content: space-evenly;
+        text-align: center; 
 
         .active {
             font-weight: bold;
@@ -32,9 +33,9 @@ div {
         }
     }
 
-    nav {
-        text-align: center; 
-    }
+    // nav {
+    //     text-align: center; 
+    // }
 }
 
 .icons {

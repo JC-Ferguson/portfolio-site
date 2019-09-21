@@ -118,11 +118,17 @@
   width: 30vw;
   margin: 0;
 }
-#about main div header {
+#about main .about_me {
   text-align: center;
 }
-#about main div p {
-  text-align: center;
+#about main .about_me h3 {
+  font-size: 2vw;
+  font-weight: bold;
+}
+#about main .about_me a {
+  font-size: 1.5vw;
+  text-decoration: none;
+  color: black;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -133,6 +139,17 @@
   #about nav {
     text-align: end;
     padding-left: 70vw;
+  }
+  #about nav a:hover + .preview {
+    display: block;
+    width: 70%;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 20px;
+  }
+  #about nav a:hover + .preview img {
+    height: 85vh;
   }
   #about main {
     margin: inherit;
@@ -161,6 +178,9 @@
   }
   #about main .about_me h1 {
     font-size: 3vw;
+  }
+  #about main .about_me h3 {
+    font-size: 2vw;
   }
   #about main .about_me p {
     font-size: 1.5vw;
@@ -210,6 +230,9 @@
     padding-left: 75vw;
     display: flex;
     justify-content: space-between;
+  }
+  #blog nav img {
+    height: 85vh;
   }
 }
 #resume .container_1 div {
@@ -304,6 +327,7 @@
 div nav {
   display: flex;
   justify-content: space-evenly;
+  text-align: center;
 }
 div nav .active {
   font-weight: bold;
@@ -322,9 +346,6 @@ div nav a:hover {
   color: white;
   background-color: black;
   border-radius: 15px;
-}
-div nav {
-  text-align: center;
 }
 
 .icons {
