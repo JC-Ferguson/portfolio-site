@@ -58,6 +58,15 @@
     #resume{
         nav {
             text-align: end;
+
+            a:hover + .preview {
+                width: 70%;
+
+                img {
+                    width: 40vw;
+                    height: 85vh;
+                }
+            }
         }
 
         header {

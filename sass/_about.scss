@@ -63,12 +63,7 @@
             padding-left: 70vw;
 
             a:hover + .preview {
-                display: block;
                 width: 70%;
-                position: absolute;
-                z-index: 1;
-                left: 0;
-                top: 20px;
     
                 img {
                     height: 85vh;
