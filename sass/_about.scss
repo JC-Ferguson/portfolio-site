@@ -6,20 +6,43 @@
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
+
+            .image_holder {
+                width: 50vw;
+
+                figure {
+                    width: inherit;
+
+                    img {
+                        height: 60vh;
+                        width: inherit;
+                    }
+                }
+            }
+
+            .logos {
+                display: flex;
+                flex-direction: column;
+
+                .icons{
+                    display: inline-block;
+                }
+            }
         }
 
-        .logos {
-            display: flex;
-            flex-direction: column;
-        }
+        // .logos {
+        //     display: flex;
+        //     flex-direction: column;
+        // }
 
-        .icons{
-            display: inline-block;
-        }
+        // .icons{
+        //     display: inline-block;
+        // }
 
         figure {
-
-            width: 85%
+            width: 30vw;
+            margin: 0;
+            // width: 85%
 
         }
 
@@ -37,16 +60,14 @@
 @media only screen and (min-width: 1024px) {
     #about { 
         height: 95vh;
-        width: 90vw;
         margin: 4px;
 
         nav {
             text-align: end;
+            padding-left: 70vw;
         }
 
         main {
-            // display: flex;
-            // justify-content: space-evenly;
             margin: inherit;
             display: flex;
             flex-direction: row;
@@ -62,15 +83,16 @@
                 }
 
                 .image_holder {
-                    height: 85vh;
-                    width: auto;
+                    // height: 85vh;
+                    // width: auto;
                 
                     figure {
-                        margin: auto;
+                        // margin: auto;
                         max-width: 70vw;
                     
                         img {
-                            height: 70vh;
+                            height: 60vh;
+                            width: 25vw;
                         }
                     }
                 }

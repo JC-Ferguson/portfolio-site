@@ -16,11 +16,35 @@
             }
         }
 
+    // .container_2 {
+    //     figure{
+    //         text-align: center;
+    
+    //         img {
+    //         width: 40px;
+    //         border-radius: 30px;
+    //         }
+    //     }
+
+    // }
+
         section {
             ol {
                 text-align-last: right; 
             }
         }
+    }
+
+    .container_2 {
+        figure{
+            text-align: center;
+    
+            img {
+            width: 40px;
+            border-radius: 30px;
+            }
+        }
+
     }
 
     .logos {
@@ -90,6 +114,16 @@
 
                     div {
                         height: 25vh;
+
+                        figure {
+                            text-align: start;
+
+                            img {
+                                width: 40px;
+                                border-radius: 30px;
+
+                            }
+                        }
                     }
 
                     .log_divs {

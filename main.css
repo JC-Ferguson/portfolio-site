@@ -25,12 +25,15 @@
   justify-content: space-around;
   align-items: center;
 }
+#home main .container figure {
+  width: 85%;
+}
+#home main .container figure img {
+  max-width: 60vw;
+}
 #home main .logos {
   display: flex;
   flex-direction: column;
-}
-#home main figure {
-  width: 85%;
 }
 #home main .greet_text p {
   text-align: center;
@@ -41,6 +44,7 @@
     font-size: 3vw;
   }
   #home nav {
+    font-size: 1.5em;
     padding-left: 75vw;
     display: flex;
     justify-content: space-between;
@@ -49,13 +53,19 @@
     margin: inherit;
     display: flex;
     width: 90vw;
+    background-color: black;
+    color: #15f5f5;
   }
   #home main .container {
     height: 65vh;
     width: 80vw;
   }
   #home main .container .logo_holder {
-    width: 3vw;
+    width: 25px;
+  }
+  #home main .container .logo_holder .linked {
+    background-color: #15f5f5;
+    border-radius: 50px;
   }
   #home main .container .logos {
     align-self: center;
@@ -87,15 +97,26 @@
   justify-content: space-around;
   align-items: center;
 }
-#about main .logos {
+#about main .container .image_holder {
+  width: 50vw;
+}
+#about main .container .image_holder figure {
+  width: inherit;
+}
+#about main .container .image_holder figure img {
+  height: 60vh;
+  width: inherit;
+}
+#about main .container .logos {
   display: flex;
   flex-direction: column;
 }
-#about main .icons {
+#about main .container .logos .icons {
   display: inline-block;
 }
 #about main figure {
-  width: 85%;
+  width: 30vw;
+  margin: 0;
 }
 #about main div header {
   text-align: center;
@@ -107,11 +128,11 @@
 @media only screen and (min-width: 1024px) {
   #about {
     height: 95vh;
-    width: 90vw;
     margin: 4px;
   }
   #about nav {
     text-align: end;
+    padding-left: 70vw;
   }
   #about main {
     margin: inherit;
@@ -127,16 +148,12 @@
     align-self: center;
     width: 10vw;
   }
-  #about main .container .image_holder {
-    height: 85vh;
-    width: auto;
-  }
   #about main .container .image_holder figure {
-    margin: auto;
     max-width: 70vw;
   }
   #about main .container .image_holder figure img {
-    height: 70vh;
+    height: 60vh;
+    width: 25vw;
   }
   #about main .about_me {
     align-self: center;
@@ -209,6 +226,13 @@
 #resume .container_1 section ol {
   text-align-last: right;
 }
+#resume .container_2 figure {
+  text-align: center;
+}
+#resume .container_2 figure img {
+  width: 40px;
+  border-radius: 30px;
+}
 #resume .logos {
   display: flex;
   justify-content: space-evenly;
@@ -262,6 +286,13 @@
   #resume main .container_2 div {
     height: 25vh;
   }
+  #resume main .container_2 div figure {
+    text-align: start;
+  }
+  #resume main .container_2 div figure img {
+    width: 40px;
+    border-radius: 30px;
+  }
   #resume main .container_2 .log_divs {
     height: 45vh;
   }
@@ -305,13 +336,29 @@ div nav {
   display: none;
 }
 
-nav a:hover + .preview {
-  display: block;
-  width: 100%;
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  top: 20px;
+@media only screen and (min-width: 1024px) {
+  nav a:hover + .preview {
+    display: block;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 20px;
+  }
+  nav a:hover + .preview img {
+    width: 45vw;
+    height: auto;
+  }
+  nav a:hover + .preview .infopic {
+    width: 20vw;
+  }
+
+  nav {
+    font-size: 1.5em;
+    padding-left: 75vw;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
