@@ -1,6 +1,7 @@
 #about{
     main{
 
+        // creates flex to better manipulate layout of contents of container class sets image width and height to be in better proportion
         .container {
             display: flex;
             flex-direction: row;
@@ -20,6 +21,7 @@
                 }
             }
 
+            // changes logos to be displayed vertically
             .logos {
                 display: flex;
                 flex-direction: column;
@@ -30,12 +32,14 @@
             }
         }
 
+        // alters width and margin due to layout purposes 
         figure {
             width: 30vw;
             margin: 0;
 
         }
 
+        // sets alignment font size and boldness of paragraph
         .about_me {
             text-align: center;
             h3 {
@@ -43,6 +47,7 @@
                 font-weight: bold;
             }
 
+            // sets size of the text as well as removing decoration of link to match with the paragraph
             a { 
                 font-size: 1.5vw;
                 text-decoration: none;
@@ -53,24 +58,31 @@
     }
 }
 
+// sets desktop version styling
 @media only screen and (min-width: 1024px) {
+    // sets the dimensions of the body of content
     #about { 
         height: 95vh;
         margin: 4px;
 
+        // nav bar aligns to the far right
         nav {
             text-align: end;
             padding-left: 70vw;
 
-            a:hover + .preview {
+            // sets the preview image to roughly middle of the page
+            .preview {
                 width: 70%;
     
                 img {
                     height: 85vh;
                 }
+                
             }
+
         }
 
+        // flex used to alter layout from mobile to desktop
         main {
             margin: inherit;
             display: flex;
@@ -80,6 +92,10 @@
         
             .container {
                 height: 85vh;
+
+                .logo_holder {
+                    z-index: 2;
+                }
 
                 .logos{
                     align-self: center;

@@ -1,5 +1,7 @@
 #resume {
     .wes {
+
+        // removes decoration from link
         a {
             text-decoration: none;
 
@@ -12,8 +14,8 @@
 
         .container_1 {
 
-            div {
-                
+            // flex to alter layout and space better
+            div {    
             display: flex;
             justify-content: space-between;
 
@@ -27,6 +29,7 @@
                 }
             }
 
+            // aligns text to the right
             section {
                 ol {
                     text-align-last: right; 
@@ -36,6 +39,8 @@
     }
 
     .container_2 {
+
+        // aligns image and goves better proportions as well as slightly rounding the image
         figure{
             text-align: center;
     
@@ -47,6 +52,7 @@
 
     }
 
+    // displays logos in a row
     .logos {
         display: flex;
         justify-content: space-evenly;
@@ -54,12 +60,16 @@
     
 }
 
+// used for desktop version of site
 @media only screen and (min-width: 1024px) {
     #resume{
+
+        // nav bar displayed to the far right oof the page
         nav {
             text-align: end;
 
-            a:hover + .preview {
+            // sets the preview image dimension to fit better on the page when displayed
+            .preview {
                 width: 70%;
 
                 img {
@@ -67,12 +77,15 @@
                     height: 85vh;
                 }
             }
+
         }
 
+        // minor text alignment
         header {
             text-align: center;
         }
         
+        // main made flex box to manipulate content to better fit wider screen
         main {
             display: flex;
             flex-direction: row-reverse;
@@ -81,8 +94,15 @@
             .wes {
                 width: 75vw;
 
+
                 h2{
                     text-align: center;
+                    span {
+                        position: absolute;
+                        a {
+                            z-index: 99; // ensures link is able to be accessed through hidden preview image
+                        }
+                    }
                 }
 
                 .container_1 {
@@ -144,6 +164,11 @@
             .logos {
                 display: flex;
                 flex-direction: column;
+
+                a {
+                    z-index: 2;
+                }
+    
             }
         
         }

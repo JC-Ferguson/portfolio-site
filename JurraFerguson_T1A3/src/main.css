@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 #home {
   margin: 15px 0;
 }
@@ -39,12 +40,6 @@
   #home h1 {
     font-size: 3vw;
   }
-  #home nav {
-    font-size: 1.5em;
-    padding-left: 75vw;
-    display: flex;
-    justify-content: space-between;
-  }
   #home main {
     margin: inherit;
     display: flex;
@@ -58,6 +53,7 @@
   }
   #home main .container .logo_holder {
     width: 25px;
+    z-index: 2;
   }
   #home main .container .logo_holder .linked {
     background-color: #15f5f5;
@@ -136,10 +132,10 @@
     text-align: end;
     padding-left: 70vw;
   }
-  #about nav a:hover + .preview {
+  #about nav .preview {
     width: 70%;
   }
-  #about nav a:hover + .preview img {
+  #about nav .preview img {
     height: 85vh;
   }
   #about main {
@@ -151,6 +147,9 @@
   }
   #about main .container {
     height: 85vh;
+  }
+  #about main .container .logo_holder {
+    z-index: 2;
   }
   #about main .container .logos {
     align-self: center;
@@ -176,10 +175,6 @@
   #about main .about_me p {
     font-size: 1.5vw;
   }
-}
-#blog nav a:hover {
-  background-color: black;
-  color: white;
 }
 #blog main header {
   text-align: center;
@@ -213,6 +208,7 @@
 }
 #blog .icons {
   display: inline-block;
+  z-index: 2;
 }
 #blog footer {
   display: flex;
@@ -226,7 +222,7 @@
     display: flex;
     justify-content: space-between;
   }
-  #blog nav a:hover + .preview img {
+  #blog nav .preview img {
     height: 85vh;
   }
   #blog header h1 {
@@ -289,10 +285,10 @@
   #resume nav {
     text-align: end;
   }
-  #resume nav a:hover + .preview {
+  #resume nav .preview {
     width: 70%;
   }
-  #resume nav a:hover + .preview img {
+  #resume nav .preview img {
     width: 40vw;
     height: 85vh;
   }
@@ -309,6 +305,12 @@
   }
   #resume main .wes h2 {
     text-align: center;
+  }
+  #resume main .wes h2 span {
+    position: absolute;
+  }
+  #resume main .wes h2 span a {
+    z-index: 99;
   }
   #resume main .wes .container_1 {
     height: 70vh;
@@ -354,7 +356,14 @@
     display: flex;
     flex-direction: column;
   }
+  #resume main .logos a {
+    z-index: 2;
+  }
 }
+body {
+  font-family: "Raleway", sans-serif;
+}
+
 div nav {
   display: flex;
   justify-content: space-evenly;
@@ -385,12 +394,30 @@ div nav a:hover {
 }
 
 .preview {
-  display: none;
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  left: 0;
+  top: 20px;
+  transition: opacity 1s ease;
+}
+.preview img {
+  width: 45vw;
+  height: auto;
+}
+.preview .infopic {
+  width: 20vw;
 }
 
 @media only screen and (min-width: 1024px) {
+  nav {
+    font-size: 1.5em;
+    padding-left: 75vw;
+    display: flex;
+    justify-content: space-between;
+  }
   nav a:hover + .preview {
-    display: block;
+    opacity: 1;
     width: 100%;
     position: absolute;
     z-index: 1;
@@ -403,13 +430,6 @@ div nav a:hover {
   }
   nav a:hover + .preview .infopic {
     width: 20vw;
-  }
-
-  nav {
-    font-size: 1.5em;
-    padding-left: 75vw;
-    display: flex;
-    justify-content: space-between;
   }
 }
 

@@ -1,14 +1,15 @@
 #home {
-    margin: 15px 0;
+    margin: 15px 0; //sets a small margin at the top and bottom of the page
 
     div {
+        // displays color to the heading as well as underlining it.
         h1 {
             color: rgb(194, 4, 4);
             text-decoration: underline; 
         }
 
         h2 {
-            text-align: center;
+            text-align: center; 
         }
     
         footer {
@@ -16,30 +17,36 @@
         }
     }
 
+    // done for spacing reasons the main body is now 80/100 of the screens width
     main{
         max-width: 80vw;
         margin: auto;
 
+        // container class is now a flexbox with the content inside having an even amount of space around them with the alignment of the items centralised
         .container {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
 
+            // figure class width changed for spacing reasons
             figure {
                 width: 85%;
     
+                // image inside figure cannot exceed 60/100 of the available screen width
                 img {
                     max-width: 60vw;
                 }
             }
         }
 
+        // logos now displayed vertically due to flexbox in the column
         .logos {
             display: flex;
             flex-direction: column;
         }
-
+        
+        // text in paragraph is aligned in the middle rather than the left
         .greet_text {
 
             p {
@@ -53,20 +60,14 @@
     }
 }
 
+// desktop style changes
 @media only screen and (min-width: 1024px) {
-
     #home { 
         h1 {
-            font-size: 3vw; 
+            font-size: 3vw; //sets font size so that scales with screen width
         }
 
-        nav {
-            font-size: 1.5em;
-            padding-left: 75vw;
-            display: flex;
-            justify-content: space-between;
-        }
-
+        // sets width due to spacing creates a flex to display items in a row sets colours to match image for readability and aesthetic
         main {
             margin: inherit;
             display: flex;
@@ -74,27 +75,31 @@
             background-color: rgb(0, 0, 0);
             color: rgb(21, 245, 245);
 
+            // spacing needed to be altered for the div therefore given the class
             .container {
                 height: 65vh;
                 width: 80vw;
 
                 .logo_holder {
-                    width: 25px;
+                    width: 25px; // spacing and layout alteration
+                    z-index: 2;
 
+                    //  linked in logo coulg not be seen background colour changed to make visible 
                     .linked {
                         background-color: rgb(21, 245, 245);
                         border-radius: 50px;
                     }
                 }
 
+                // layout alterations making logos lay in center of the division and matching width of parent division
                 .logos{
                     align-self: center;
                     width: inherit;
                 }
 
+                // class created to alter dimensions so image inside the figure would lay with in its borders
                 .image_holder {
                     height: 65vh;
-                    // width: 40vw;
                 
                     figure {
                         width: 35vw;
@@ -108,6 +113,7 @@
 
             }
 
+            // aligns paragraph and sets its borders and text size should screen size be altered
             .greet_text {
                 align-self: center;
                 max-width: 40vw;
