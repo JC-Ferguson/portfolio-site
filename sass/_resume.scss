@@ -1,36 +1,36 @@
 #resume {
-    .container_1 {
+    .wes {
+        a {
+            text-decoration: none;
 
-        div {
-            
-        display: flex;
-        justify-content: space-between;
-
-            div {
-                width: 55vw;
-                justify-content: space-evenly;
-
-                    div {
-                        flex-direction: column;
-                    }
+            span {
+                font-size: 15px;
+                color: rgb(0, 0, 0);
+                
             }
         }
 
-    // .container_2 {
-    //     figure{
-    //         text-align: center;
-    
-    //         img {
-    //         width: 40px;
-    //         border-radius: 30px;
-    //         }
-    //     }
+        .container_1 {
 
-    // }
+            div {
+                
+            display: flex;
+            justify-content: space-between;
 
-        section {
-            ol {
-                text-align-last: right; 
+                div {
+                    width: 55vw;
+                    justify-content: space-evenly;
+
+                        div {
+                            flex-direction: column;
+                        }
+                }
+            }
+
+            section {
+                ol {
+                    text-align-last: right; 
+                }
             }
         }
     }
@@ -122,7 +122,7 @@
                     width: 25vw;
 
                     div {
-                        height: 25vh;
+                        height: 40vh;
 
                         figure {
                             text-align: start;

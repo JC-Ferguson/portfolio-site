@@ -252,18 +252,25 @@
     flex-direction: row-reverse;
   }
 }
-#resume .container_1 div {
+#resume .wes a {
+  text-decoration: none;
+}
+#resume .wes a span {
+  font-size: 15px;
+  color: black;
+}
+#resume .wes .container_1 div {
   display: flex;
   justify-content: space-between;
 }
-#resume .container_1 div div {
+#resume .wes .container_1 div div {
   width: 55vw;
   justify-content: space-evenly;
 }
-#resume .container_1 div div div {
+#resume .wes .container_1 div div div {
   flex-direction: column;
 }
-#resume .container_1 section ol {
+#resume .wes .container_1 section ol {
   text-align-last: right;
 }
 #resume .container_2 figure {
@@ -331,7 +338,7 @@
     width: 25vw;
   }
   #resume main .container_2 div {
-    height: 25vh;
+    height: 40vh;
   }
   #resume main .container_2 div figure {
     text-align: start;
