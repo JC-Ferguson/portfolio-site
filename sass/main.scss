@@ -3,6 +3,8 @@
 @import "blog";
 @import "resume";
 
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
 div {
     nav {
         display: flex;
@@ -47,6 +49,10 @@ div {
 
 
 @media only screen and (min-width: 1024px) {
+    body{
+        font-family: "Pacifico", sans-serif;
+    }
+
     nav a:hover + .preview {
         display: block;
         width: 100%;
