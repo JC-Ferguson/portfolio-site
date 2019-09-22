@@ -1,0 +1,151 @@
+#resume {
+    .wes {
+        a {
+            text-decoration: none;
+
+            span {
+                font-size: 15px;
+                color: rgb(0, 0, 0);
+                
+            }
+        }
+
+        .container_1 {
+
+            div {
+                
+            display: flex;
+            justify-content: space-between;
+
+                div {
+                    width: 55vw;
+                    justify-content: space-evenly;
+
+                        div {
+                            flex-direction: column;
+                        }
+                }
+            }
+
+            section {
+                ol {
+                    text-align-last: right; 
+                }
+            }
+        }
+    }
+
+    .container_2 {
+        figure{
+            text-align: center;
+    
+            img {
+            width: 40px;
+            border-radius: 30px;
+            }
+        }
+
+    }
+
+    .logos {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+}
+
+@media only screen and (min-width: 1024px) {
+    #resume{
+        nav {
+            text-align: end;
+
+            a:hover + .preview {
+                width: 70%;
+
+                img {
+                    width: 40vw;
+                    height: 85vh;
+                }
+            }
+        }
+
+        header {
+            text-align: center;
+        }
+        
+        main {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            
+            .wes {
+                width: 75vw;
+
+                h2{
+                    text-align: center;
+                }
+
+                .container_1 {
+                    height: 70vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    h3 {
+                        font-size: 1.55vw; 
+                        margin: inherit;
+                    }
+
+                    div {
+                        justify-content: space-between;
+
+                        div {
+                            width: 50vw;
+                            display: flex;
+                            flex-direction: row;
+                       
+                            div {
+                                flex-direction: column;
+                            }
+                        }
+                    }
+
+                    section {
+                        width: 48vw;
+                    }
+                }
+            }
+
+
+
+            .container_2 {
+                    width: 25vw;
+
+                    div {
+                        height: 40vh;
+
+                        figure {
+                            text-align: start;
+
+                            img {
+                                width: 40px;
+                                border-radius: 30px;
+
+                            }
+                        }
+                    }
+
+                    .log_divs {
+                        height: 45vh;
+                    }
+            }
+            
+
+            .logos {
+                display: flex;
+                flex-direction: column;
+            }
+        
+        }
+    }
+}

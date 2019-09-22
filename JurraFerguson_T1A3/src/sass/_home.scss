@@ -1,0 +1,128 @@
+#home {
+    margin: 15px 0;
+
+    div {
+        h1 {
+            color: rgb(194, 4, 4);
+            text-decoration: underline; 
+        }
+
+        h2 {
+            text-align: center;
+        }
+    
+        footer {
+            text-align: right;
+        }
+    }
+
+    main{
+        max-width: 80vw;
+        margin: auto;
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            figure {
+                width: 85%;
+    
+                img {
+                    max-width: 60vw;
+                }
+            }
+        }
+
+        .logos {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .greet_text {
+
+            p {
+
+                text-align: center;
+
+            }
+
+        }
+
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    #home { 
+        h1 {
+            font-size: 3vw; 
+        }
+
+        nav {
+            font-size: 1.5em;
+            padding-left: 75vw;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        main {
+            margin: inherit;
+            display: flex;
+            width: 90vw;
+            background-color: rgb(0, 0, 0);
+            color: rgb(21, 245, 245);
+
+            .container {
+                height: 65vh;
+                width: 80vw;
+
+                .logo_holder {
+                    width: 25px;
+
+                    .linked {
+                        background-color: rgb(21, 245, 245);
+                        border-radius: 50px;
+                    }
+                }
+
+                .logos{
+                    align-self: center;
+                    width: inherit;
+                }
+
+                .image_holder {
+                    height: 65vh;
+                    // width: 40vw;
+                
+                    figure {
+                        width: 35vw;
+                    
+                        img {
+                            height: 60vh;
+                        }
+                    }
+                }
+                
+
+            }
+
+            .greet_text {
+                align-self: center;
+                max-width: 40vw;
+
+                h2 {
+                    font-size: 3vw;
+                }
+
+                p {
+                    font-size: 1.25vw;
+                }
+
+            }
+
+        }
+    
+    }
+}

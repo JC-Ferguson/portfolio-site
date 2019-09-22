@@ -1,0 +1,123 @@
+#about{
+    main{
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            .image_holder {
+                width: 50vw;
+
+                figure {
+                    width: inherit;
+
+                    img {
+                        height: 60vh;
+                        width: inherit;
+                    }
+                }
+            }
+
+            .logos {
+                display: flex;
+                flex-direction: column;
+
+                .icons{
+                    display: inline-block;
+                }
+            }
+        }
+
+        figure {
+            width: 30vw;
+            margin: 0;
+
+        }
+
+        .about_me {
+            text-align: center;
+            h3 {
+                font-size: 2vw;
+                font-weight: bold;
+            }
+
+            a { 
+                font-size: 1.5vw;
+                text-decoration: none;
+                color: rgb(0, 0, 0);
+            }
+        }
+
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #about { 
+        height: 95vh;
+        margin: 4px;
+
+        nav {
+            text-align: end;
+            padding-left: 70vw;
+
+            a:hover + .preview {
+                width: 70%;
+    
+                img {
+                    height: 85vh;
+                }
+            }
+        }
+
+        main {
+            margin: inherit;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 90vw;
+        
+            .container {
+                height: 85vh;
+
+                .logos{
+                    align-self: center;
+                    width: 10vw;
+                }
+
+                .image_holder {
+                
+                    figure {
+                        max-width: 70vw;
+                    
+                        img {
+                            height: 60vh;
+                            width: 25vw;
+                        }
+                    }
+                }
+                
+
+            }
+
+            .about_me {
+                align-self: center;
+                max-width: 40vw;
+
+                h1 {
+                    font-size: 3vw;
+                }
+
+                h3 {
+                    font-size: 2vw;
+                }
+
+                p {
+                    font-size: 1.5vw;
+                }
+            }
+
+        }
+    }
+}
