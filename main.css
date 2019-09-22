@@ -389,6 +389,11 @@ div nav a:hover {
 }
 
 @media only screen and (min-width: 1024px) {
+  body {
+    background-color: red;
+    color: black;
+  }
+
   nav a:hover + .preview {
     display: block;
     width: 100%;
